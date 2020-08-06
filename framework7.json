@@ -1,0 +1,26 @@
+{
+  "cwd": "C:\\Users\\malan\\Documents\\Lambda\\git\\grace-church",
+  "type": [
+    "web"
+  ],
+  "name": "Grace Church",
+  "framework": "react",
+  "template": "tabs",
+  "bundler": "webpack",
+  "cssPreProcessor": "less",
+  "theming": {
+    "customColor": true,
+    "color": "#0899d8",
+    "darkTheme": false,
+    "iconFonts": true,
+    "fillBars": false
+  },
+  "customBuild": false,
+  "webpack": {
+    "developmentSourceMap": true,
+    "productionSourceMap": true,
+    "hashAssets": false,
+    "preserveAssetsPaths": false,
+    "inlineAssets": true
+  }
+}
