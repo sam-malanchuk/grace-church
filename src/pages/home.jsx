@@ -21,9 +21,9 @@ export default () => (
   <Page name="home">
     {/* Top Navbar */}
     <Navbar large sliding={false}>
-      <NavLeft>
+      {/* <NavLeft>
         <Link iconIos="f7:menu" iconAurora="f7:menu" iconMd="material:menu" panelOpen="left" />
-      </NavLeft>
+      </NavLeft> */}
       <NavTitle sliding>Grace Church</NavTitle>
       <NavRight>
         <Link iconIos="f7:menu" iconAurora="f7:menu" iconMd="material:menu" panelOpen="right" />
@@ -33,9 +33,9 @@ export default () => (
 
     {/* Page content */}
     <Block strong>
-      <p>This is an example of tabs-layout application. The main point of such tabbed layout is that each tab contains independent view with its own routing and navigation.</p>
+      <p>Welcome to Grace Baptist Church, we are glad to provide you with our most recent informationa and media through our new app.</p>
 
-      <p>Each tab/view may have different layout, different navbar type (dynamic, fixed or static) or without navbar like this tab.</p>
+      <p>Use the tabs below or the menu options to navigate through the content.</p>
     </Block>
     <BlockTitle>Navigation</BlockTitle>
     <List>
@@ -43,7 +43,19 @@ export default () => (
       <ListItem link="/form/" title="Form"/>
     </List>
 
-    <BlockTitle>Modals</BlockTitle>
+    <BlockTitle>Send Money</BlockTitle>
+    <Block strong>
+      <Row>
+        <Col width="50">
+          <Button fill raised panelOpen="left">Tithe</Button>
+        </Col>
+        <Col width="50">
+          <Button fill raised panelOpen="right">Offerings</Button>
+        </Col>
+      </Row>
+    </Block>
+
+    {/* <BlockTitle>Modals</BlockTitle>
     <Block strong>
       <Row>
         <Col width="50">
@@ -80,6 +92,6 @@ export default () => (
         title="Request Data & Load"
         link="/request-and-load/user/123456/"
       />
-    </List>
+    </List> */}
   </Page>
 );

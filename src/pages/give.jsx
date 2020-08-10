@@ -11,8 +11,8 @@ export default class extends React.Component {
   }
   render() {
     return (
-      <Page name="catalog">
-        <Navbar title="Catalog" />
+      <Page name="give">
+        <Navbar title="Give" />
         <List>
           {this.state.products.map((product) => (
             <ListItem
