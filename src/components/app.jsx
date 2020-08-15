@@ -104,19 +104,24 @@ export default class extends React.Component {
             <Link tabLink="#view-home" tabLinkActive iconIos="f7:house_fill" iconAurora="f7:house_fill" iconMd="material:home" text="Home" />
             <Link tabLink="#view-events" iconIos="f7:calendar" iconAurora="f7:calendar" iconMd="material:calendar" text="Events" />
             <Link tabLink="#view-contact" iconIos="f7:bubble_left_bubble_right_fill" iconAurora="f7:bubble_left_bubble_right_fill" iconMd="material:contact" text="Contact" />
-            <Link tabLink="#view-audio" iconIos="f7:mic_fill" iconAurora="f7:mic_fill" iconMd="material:audio" text="Audio" />
+            <Link tabLink="#view-archive" iconIos="f7:mic_fill" iconAurora="f7:mic_fill" iconMd="material:audio" text="Archive" />
             <Link tabLink="#view-give" iconIos="f7:creditcard_fill" iconAurora="f7:creditcard_fill" iconMd="material:give" text="Give" />
-            <Link tabLink="#view-settings" iconIos="f7:gear" iconAurora="f7:gear" iconMd="material:settings" text="Settings" />
           </Toolbar>
 
           {/* Your main view/tab, should have "view-main" class. It also has "tabActive" prop */}
           <View id="view-home" main tab tabActive url="/" />
 
+          {/* Events View */}
+          <View id="view-events" name="events" tab url="/events/" />
+
+          {/* Contact View */}
+          <View id="view-contact" name="contact" tab url="/contact/" />
+
+          {/* Archive View */}
+          <View id="view-archive" name="archive" tab url="/archive/" />
+
           {/* Give View */}
           <View id="view-give" name="give" tab url="/give/" />
-
-          {/* Settings View */}
-          <View id="view-settings" name="settings" tab url="/settings/" />
 
         </Views>
 

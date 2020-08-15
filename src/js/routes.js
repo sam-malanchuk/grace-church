@@ -4,7 +4,9 @@ import AboutPage from '../pages/about.jsx';
 import FormPage from '../pages/form.jsx';
 import GivePage from '../pages/give.jsx';
 import ProductPage from '../pages/product.jsx';
-import SettingsPage from '../pages/settings.jsx';
+import ArchivePage from '../pages/archive.jsx';
+import ContactPage from '../pages/contact.jsx';
+import EventsPage from '../pages/events.jsx';
 
 import DynamicRoutePage from '../pages/dynamic-route.jsx';
 import RequestAndLoad from '../pages/request-and-load.jsx';
@@ -24,16 +26,24 @@ var routes = [
     component: FormPage,
   },
   {
+    path: '/archive/',
+    component: ArchivePage,
+  },
+  {
+    path: '/contact/',
+    component: ContactPage,
+  },
+  {
+    path: '/events/',
+    component: EventsPage,
+  },
+  {
     path: '/give/',
     component: GivePage,
   },
   {
     path: '/product/:id/',
     component: ProductPage,
-  },
-  {
-    path: '/settings/',
-    component: SettingsPage,
   },
 
   {
