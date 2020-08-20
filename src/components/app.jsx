@@ -72,7 +72,7 @@ export default class extends React.Component {
       <App params={ this.state.f7params } >
 
         {/* Left panel with cover effect*/}
-        <Panel left cover themeDark>
+        <Panel left reveal themeDark>
           <View>
             <Page>
               <Navbar title="Left Panel"/>
@@ -83,15 +83,11 @@ export default class extends React.Component {
 
 
         {/* Right panel with reveal effect*/}
-        <Panel right reveal themeDark>
+        <Panel right cover themeDark>
           <View>
             <Page>
-              <Navbar title="Right Panel"/>
-              <Block>Right panel content goes here</Block>
-              <List>
-                <ListItem link="/about/" title="About"/>
-                <ListItem link="/form/" title="Form"/>
-              </List>
+              <Navbar title="Card Payments"/>
+              <Block>Fill out the credit card details below</Block>
             </Page>
           </View>
         </Panel>

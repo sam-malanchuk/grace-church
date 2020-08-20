@@ -21,13 +21,13 @@ export default () => (
   <Page name="home">
     {/* Top Navbar */}
     <Navbar large sliding={false}>
-      {/* <NavLeft>
+      <NavLeft>
         <Link iconIos="f7:menu" iconAurora="f7:menu" iconMd="material:menu" panelOpen="left" />
-      </NavLeft> */}
+      </NavLeft>
       <NavTitle sliding>Grace Church</NavTitle>
-      <NavRight>
+      {/* <NavRight>
         <Link iconIos="f7:menu" iconAurora="f7:menu" iconMd="material:menu" panelOpen="right" />
-      </NavRight>
+      </NavRight> */}
       <NavTitleLarge>Grace Church</NavTitleLarge>
     </Navbar>
 
@@ -42,18 +42,6 @@ export default () => (
       <ListItem link="/about/" title="About"/>
       <ListItem link="/form/" title="Form"/>
     </List>
-
-    <BlockTitle>Send Money</BlockTitle>
-    <Block strong>
-      <Row>
-        <Col width="50">
-          <Button fill raised panelOpen="left">Tithe</Button>
-        </Col>
-        <Col width="50">
-          <Button fill raised panelOpen="right">Offerings</Button>
-        </Col>
-      </Row>
-    </Block>
 
     {/* <BlockTitle>Modals</BlockTitle>
     <Block strong>
